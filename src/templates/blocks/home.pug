@@ -1,0 +1,39 @@
+section.home
+  .home__header
+    header.header
+      .header__logo
+        .logo
+          | Планеты
+      .header__menu
+        nav.nav
+          ul.nav__list
+            li.nav__item
+              a(href='#').nav__link Меркурий
+            li.nav__item
+              a(href='#').nav__link Венера
+            li.nav__item
+              a(href='#').nav__link Земля
+            li.nav__item
+              a(href='#').nav__link Марс
+            li.nav__item
+              a(href='#').nav__link Юпитер
+            li.nav__item
+              a(href='#').nav__link Сатурн
+            li.nav__item
+              a(href='#').nav__link Уран
+            li.nav__item
+              a(href='#').nav__link Нептун
+  .home__body
+    ul.home-slider
+      li.home-slider__item(style=`background-image: url(${require("../../images/content/earth.jpg")})`)
+        .home-slider__suptitle Пока мы здесь
+        .home-slider__title Земля
+        .home-slider__subtitle Единственная планета, которую мы знаем о жизни... и многое из этого.
+        .home-slider__button
+          button(type="button").button-basic Исследовать Землю
+      //- li.home-slider__item(style=`background-image: url(${require("./images/content/earth.jpg")})`)
+        .home-slider__suptitle Пока мы здесь
+        .home-slider__title Земля
+        .home-slider__subtitle Единственная планета, которую мы знаем о жизни... и многое из этого.
+        .home-slider__button
+          button(type="button").button-basic Исследовать Землю
