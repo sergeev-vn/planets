@@ -1,19 +1,9 @@
 {
   "main": "#fff;",
-  "secondary": "#000000",
-  "submain": "#FF8D4E;",
+  "secondary": "#000",
+  "secondary": "#000",
+  "logo": "#43aaed",
+  "light-blue": "#a9d3ee",
 
-  "delimiter-bg": "#2D2D2D",
-  "nearby-titles": "#CFCFCF",
-  "placeholder": "#919191",
-  "tab-link": "#717171",
-
-  "speed": "0.3s",
-
-  "bp-desktop-hd": "1800px",
-  "bp-desktop-hd-mini": "1600px",
-  "bp-desktop-mini": "1400px",
-  "bp-desktop": "1200px",
-  "bp-tablets": "768px",
-  "bp-phones": "480px"
+  "speed": "0.3s"
 }

@@ -26,7 +26,7 @@ module.exports = (env, argv) => {
   };
 
   const files = {
-    test: /\.(png|jpe?g|gif|woff2|ttf?)$/i,
+    test: /\.(png|jpe?g|gif|woff2|woff|eot|mp4|ttf?)$/i,
     loader: "file-loader",
     options: {
       name: "[hash].[ext]"
@@ -49,11 +49,6 @@ module.exports = (env, argv) => {
         options: {
           plugins: [
             { removeTitle: true },
-            {
-              removeAttrs: {
-                attrs: "(fill)"
-              }
-            }
           ]
         }
       }

@@ -1,39 +1,65 @@
 section.home
   .home__header
-    header.header
-      .header__logo
-        .logo
-          | Планеты
-      .header__menu
-        nav.nav
-          ul.nav__list
-            li.nav__item
-              a(href='#').nav__link Меркурий
-            li.nav__item
-              a(href='#').nav__link Венера
-            li.nav__item
-              a(href='#').nav__link Земля
-            li.nav__item
-              a(href='#').nav__link Марс
-            li.nav__item
-              a(href='#').nav__link Юпитер
-            li.nav__item
-              a(href='#').nav__link Сатурн
-            li.nav__item
-              a(href='#').nav__link Уран
-            li.nav__item
-              a(href='#').nav__link Нептун
+    .container.home__container
+      header.header
+        .header__logo
+          a(href="#").logo
+            .logo__icon
+              +icon('logo', 'logo__icon-pic')
+            .logo__text
+              span.logo__text_color Восемь
+              br
+              | планет
+        .header__menu
+          nav.nav
+            ul.nav__list
+              li.nav__item
+                a(href='#').nav__link Меркурий
+              li.nav__item
+                a(href='#').nav__link Венера
+              li.nav__item
+                a(href='#').nav__link Земля
+              li.nav__item
+                a(href='#').nav__link Марс
+              li.nav__item
+                a(href='#').nav__link Юпитер
+              li.nav__item
+                a(href='#').nav__link Сатурн
+              li.nav__item
+                a(href='#').nav__link Уран
+              li.nav__item
+                a(href='#').nav__link Нептун
   .home__body
-    ul.home-slider
-      li.home-slider__item(style=`background-image: url(${require("../../images/content/earth.jpg")})`)
-        .home-slider__suptitle Пока мы здесь
-        .home-slider__title Земля
-        .home-slider__subtitle Единственная планета, которую мы знаем о жизни... и многое из этого.
-        .home-slider__button
-          button(type="button").button-basic Исследовать Землю
-      //- li.home-slider__item(style=`background-image: url(${require("./images/content/earth.jpg")})`)
-        .home-slider__suptitle Пока мы здесь
-        .home-slider__title Земля
-        .home-slider__subtitle Единственная планета, которую мы знаем о жизни... и многое из этого.
-        .home-slider__button
-          button(type="button").button-basic Исследовать Землю
+    .home__body-slider
+      ul.home-slider
+        li.home-slider__item
+          video(autoplay loop muted).home-slider__item-video
+            source(src=`${require("./images/content/earth-video.mp4")}`, type="video/mp4")
+            | Ваш браузер не поддерживает видео тег.
+          .home-slider__item-wrap
+            .container
+              .home-slider__item-info
+                .home-slider__suptitle Наша Родная Планета
+                h1.home-slider__title Земля
+                .home-slider__subtitle Единственная планета, на которой мы знаем есть жизнь...
+                .home-slider__button
+                  button(type="button").button-basic Исследовать Землю
+    .home__body-dashboard
+      .container.home__container
+        ul.dashboard
+          li.dashboard__item
+            .dashboard__item-text
+              .dashboard__item-title Планет в нашей солнечной системе
+              .dashboard__item-subtitle 8
+          li.dashboard__item
+            .dashboard__item-text
+              .dashboard__item-title Лун в нашей солнечной системе
+              .dashboard__item-subtitle 200+
+          li.dashboard__item
+            .dashboard__item-text
+              .dashboard__item-title Астеройдов в нашей солнечной системе
+              .dashboard__item-subtitle 958 967
+          li.dashboard__item
+            .dashboard__item-text
+              .dashboard__item-title Комет в нашей солнечной системе
+              .dashboard__item-subtitle 3 648

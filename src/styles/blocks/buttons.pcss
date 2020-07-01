@@ -1,0 +1,36 @@
+.button-basic {
+  padding: 16px 20px 14px;
+  text-transform: uppercase;
+  color: $light-blue;
+  border: 1px solid rgba($main, 0.3);
+  font-family: 'Proxima Nova ExCn Th';
+  font-weight: 600;
+  font-size: 20px;
+  transition: all $speed;
+
+  &:hover {
+    border: 1px solid rgba($main, 1);
+    color: $main;
+  }
+}
+
+.dashboard__btn {
+  width: 45px;
+}
+
+.arrow-button  {
+  height: 100%;
+  width: 100%;
+  background-color: transparent !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70%;
+  outline: none;
+  &_prev {
+    background-image: url(../images/arrow-left.png);
+  }
+
+  &_next {
+    background-image: url(../images/arrow-right.png);
+  }
+}
