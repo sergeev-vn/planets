@@ -28,6 +28,12 @@
   }
 }
 
+@mixin desktopMin() {
+  @media screen and (max-width: 980px) {
+    @content;
+  }
+}
+
 // @mixin desktopMin() {
 //   @media screen and (min-width: 1201px) {
 //     @content;

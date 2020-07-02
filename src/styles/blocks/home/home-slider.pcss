@@ -1,5 +1,11 @@
 .home-slider {
   height: 100vh;
+
+  &:hover {
+    .home-slider__btn {
+      opacity: 1;
+    }
+  }
 }
 
 .home-slider__item {
@@ -11,7 +17,7 @@
 }
 
 .home-slider__item-wrap {
-  background-color: rgba($secondary, 0.3);
+  background-color: rgba($secondary, 0.2);
   position: absolute;
   top: 0;
   left: 0;
@@ -24,6 +30,14 @@
 .home-slider__item-info {
   max-width: 260px;
   width: 100%;
+  margin-left: 55px;
+
+  @include tablets {
+    max-width: initial;
+    text-align: center;
+    margin-left: 0;
+    padding: 0 40px;
+  }
 }
 
 .home-slider__suptitle {
@@ -31,12 +45,24 @@
   font-family: 'Proxima Nova ExCn Th';
   font-weight: 600;
   text-transform: uppercase;
+
+  @include tablets {
+    font-size: 21px;
+  }
+
+  &_red {
+    color: $mars;
+  }
 }
 
 .home-slider__title {
   font-size: 40px;
   font-family: 'Proxima Nova Cn Th';
   font-weight: 800;
+
+  @include tablets {
+    font-size: 50px;
+  }
 }
 
 .home-slider__subtitle {
@@ -54,4 +80,30 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.home-slider__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  z-index: 5;
+  opacity: 0;
+  transition: all 0.3s;
+  left: 15px;
+
+  &_next {
+    right: 15px;
+    left: initial;
+  }
+
+
+  .arrow-button {
+    background-size: 100%;
+  }
 }

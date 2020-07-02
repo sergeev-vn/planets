@@ -1,9 +1,9 @@
 {
   "main": "#fff;",
   "secondary": "#000",
-  "secondary": "#000",
   "logo": "#43aaed",
   "light-blue": "#a9d3ee",
+  "mars": "rgb(249, 130, 92);",
 
   "speed": "0.3s"
 }

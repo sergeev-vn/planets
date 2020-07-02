@@ -12,6 +12,8 @@ section.home
               | планет
         .header__menu
           nav.nav
+            button.humburger-btn
+              .humburger-btn__row
             ul.nav__list
               li.nav__item
                 a(href='#').nav__link Меркурий
@@ -32,7 +34,7 @@ section.home
   .home__body
     .home__body-slider
       ul.home-slider
-        li.home-slider__item
+        li.home-slider__item(style=`background-image: url(${require("./images/content/earth.jpg")})`)
           video(autoplay loop muted).home-slider__item-video
             source(src=`${require("./images/content/earth-video.mp4")}`, type="video/mp4")
             | Ваш браузер не поддерживает видео тег.
@@ -44,6 +46,18 @@ section.home
                 .home-slider__subtitle Единственная планета, на которой мы знаем есть жизнь...
                 .home-slider__button
                   button(type="button").button-basic Исследовать Землю
+        li.home-slider__item(style=`background-image: url(${require("./images/content/mars.jpg")})`)
+          video(autoplay loop muted).home-slider__item-video
+            source(src=`${require("./images/content/mars-video.m4v")}`, type="video/mp4")
+            | Ваш браузер не поддерживает видео тег.
+          .home-slider__item-wrap
+            .container
+              .home-slider__item-info
+                .home-slider__suptitle.home-slider__suptitle_red возможно наш следущий дом
+                h1.home-slider__title Марс
+                .home-slider__subtitle Единственная известная нам планета, на которой обитают только роботы.
+                .home-slider__button
+                  button(type="button").button-basic.button-basic_red Исследовать Марс
     .home__body-dashboard
       .container.home__container
         ul.dashboard

@@ -1,0 +1,66 @@
+.humburger-btn {
+  width: 55px;
+  height: 55px;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba($main, 0.3);
+  transition: all .5s ease-in-out;
+  outline: none;
+  display: none;
+  
+  @include desktopMin {
+    display: flex;
+  }
+
+  &:hover {
+    background-color: rgba($main, 0.3);
+  }
+}
+
+.humburger-btn__row {
+  height: 2px;
+  width: 30px;
+  background-color: $main;
+  transition: all .5s ease-in-out;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: $main;
+    left: 0;
+    transition: all .5s ease-in-out;
+  }
+
+  &:before {
+    transform: translateY(-13px);
+  }
+
+  &:after {
+    transform: translateY(13px);
+  }
+} 
+
+/* ANIMATION */
+.humburger-btn.open {
+  position: relative;
+  z-index: 10;
+  
+  .humburger-btn__row {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+
+    &::before {
+      transform: rotate(45deg) translate(35px, -35px);
+    }
+
+    &::after {
+      transform: rotate(-45deg) translate(35px, 35px);
+    }
+  }
+} 
