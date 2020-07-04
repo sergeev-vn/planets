@@ -8,7 +8,7 @@
 + jQuery
 
 <p align='center'>
-<img src='http://lessons.sergeev.press/git%20portf%20(1).png'>
+<img src='http://lessons.sergeev.press/planets-preview.jpg'>
 </p>
 
 [**Демо**](https://sergeev-vn.github.io/planets)
