@@ -16,7 +16,7 @@
 ## Чтобы развернуть проект необходимо:
 > Перед установкой зависимостей и запуском проекта убедитесь, что у вас установлена [последняя версия Node.js & NPM](https://nodejs.org/en/download/current/), а так же
 > [последняя версия Yarn](https://yarnpkg.com/ru/docs/install)
-
+ 
 ```sh
 $ git clone https://github.com/sergeev-vn/planets.git
 $ cd planets
