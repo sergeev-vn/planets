@@ -46,7 +46,7 @@
   "dependencies": {
     "animate.css": "^4.1.0",
     "jquery": "^3.4.1",
-    "jquery-ui": "^1.12.1",
+    "jquery-ui": "^1.13.2",
     "lightbox2": "^2.11.1",
     "normalize.css": "^8.0.1",
     "numeral": "^2.0.6",
